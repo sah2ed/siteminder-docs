@@ -3,8 +3,9 @@
 ## Introduction
 Two Spring Boot apps were built to demonstrate that the requirements are feasible using Netflix Zuul.
 
-- `siteminder-pweb`
-- `siteminder-zuul-proxy`
+- `siteminder-pweb` # the target server aka "Partner Web (PWEB)" 
+- `siteminder-zuul-proxy` # the Zuul proxy server aka the "Site Minder Engine (SM)".
+- `siteminder-docs` # this document
 
 
 ## Deployment
@@ -70,6 +71,8 @@ heroku login
 3.2. Visit https://siteminder-zuul-proxy.herokuapp.com/pweb/ then click "Sign in" to login with the default credentials.
 
 ![](docs/02_zuul-proxy.png)
+
+3.3. You can NOT view the sample requests and response XML from this page since you are accessing "Partner Web (PWEB)" from behind a proxy without any "authentication". To view the sample requests and response XML, click on the buttons at the [target site](https://siteminder-pweb.herokuapp.com/) instead.
 
 ![](docs/03_zuul-proxy.png)
 
