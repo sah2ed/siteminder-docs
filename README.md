@@ -103,6 +103,7 @@ cat 03_request.xml | curl https://siteminder-zuul-proxy.herokuapp.com/pweb/GetOr
 ```
 
 
+## Miscellaneous
 ### Install the Spring Boot CLI
 * Download the current version of the `spring-boot-cli` zip archive [`spring-boot-cli-1.5.6.RELEASE-bin.zip`](http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.5.6.RELEASE/spring-boot-cli-1.5.6.RELEASE-bin.zip) to your machine.
 ```
