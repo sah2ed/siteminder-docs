@@ -12,6 +12,7 @@ Two Spring Boot apps were built to demonstrate that the requirements are feasibl
 1.0. Please install the `mvn` build tool and ensure it is in your `PATH`.
 
 2.0. Open 2 separate console tabs then execute these commands:
+
 2.1. Console tab #1
 
 - `cd siteminder-pweb/`
@@ -21,7 +22,7 @@ Two Spring Boot apps were built to demonstrate that the requirements are feasibl
 2.2. Console tab #2
 
 - `cd siteminder-zuul-proxy/`
-- `vim src/main/resources/application.yml` # edit it to use the URL of the first app (by uncommenting `url: http://localhost:8080/`)
+- `vim src/main/resources/application.yml` # use the URL of the first app (by uncommenting `url: http://localhost:8080/`)
 - `mvn spring-boot:run`
 
 
@@ -34,6 +35,7 @@ heroku login
 ```
 
 2.0. Next open 2 separate console tabs then execute these commands:
+
 2.1. Console tab #1
 
 - `cd siteminder-pweb/`
@@ -49,7 +51,7 @@ heroku login
 2.2. Console tab #2
 
 - `cd siteminder-zuul-proxy/`
-- `vim src/main/resources/application.yml` # edit it to use the URL of the first Heroku app
+- `vim src/main/resources/application.yml` # use the URL of the first Heroku app
 - `git init`
 - `git add .`
 - `git commit -m "first commit"`
@@ -60,7 +62,9 @@ heroku login
 
 
 3.0. View the 2 apps on Heroku
+
 3.1. Visit https://siteminder-pweb.herokuapp.com/
+
 ![](docs/01_pweb.png)
 
 3.2. Visit https://siteminder-zuul-proxy.herokuapp.com/pweb/ then click "Sign in" to login with the default credentials.
@@ -96,9 +100,7 @@ cat 03_request.xml | curl https://siteminder-zuul-proxy.herokuapp.com/pweb/GetOr
 ```
 
 
-## Install the Spring Boot CLI
-*A summary of the commands to be executed are provided at the end of this section.*
-
+### Install the Spring Boot CLI
 * Download the current version of the `spring-boot-cli` zip archive [`spring-boot-cli-1.5.6.RELEASE-bin.zip`](http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.5.6.RELEASE/spring-boot-cli-1.5.6.RELEASE-bin.zip) to your machine.
 ```
 mkdir -p /tmp/submission/
