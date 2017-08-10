@@ -1,0 +1,137 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SiteMinder",
+		"_postman_id": "7e07ec9d-c4e5-f229-266a-b3705e6310a0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetOrderData01",
+			"request": {
+				"url": {
+					"raw": "https://siteminder-zuul-proxy.herokuapp.com/pweb/GetOrderData/?debug=true",
+					"protocol": "https",
+					"host": [
+						"siteminder-zuul-proxy",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pweb",
+						"GetOrderData",
+						""
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<soap:Body>\r\n<getOrderDataRequest xmlns=\"http://a1ta.infonova.at/dach/orderdata\">\r\n<token xmlns=\"\">zxmLt9Syh6OcYIV9WPSvNYBNsKxLCwqd</token>\r\n<frontEndSystem xmlns=\"\">A1PWEB</frontEndSystem>\r\n</getOrderDataRequest>\r\n</soap:Body>\r\n</soap:Envelope>"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderData02",
+			"request": {
+				"url": {
+					"raw": "https://siteminder-zuul-proxy.herokuapp.com/pweb/GetOrderData/?debug=true",
+					"protocol": "https",
+					"host": [
+						"siteminder-zuul-proxy",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pweb",
+						"GetOrderData",
+						""
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<soap:Body>\r\n<getOrderDataRequest xmlns=\"http://a1ta.infonova.at/dach/orderdata\">\r\n<token xmlns=\"\">abczyz9Syh6OcYIV9WPSvNYBNsKxLCwqd</token>\r\n<frontEndSystem xmlns=\"\">A1PWEB</frontEndSystem>\r\n</getOrderDataRequest>\r\n</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderData03",
+			"request": {
+				"url": {
+					"raw": "https://siteminder-zuul-proxy.herokuapp.com/pweb/GetOrderData/?debug=true",
+					"protocol": "https",
+					"host": [
+						"siteminder-zuul-proxy",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pweb",
+						"GetOrderData",
+						""
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<soap:Body>\r\n<getOrderDataRequest xmlns=\"http://a1ta.infonova.at/dach/orderdata\">\r\n<frontEndSystem xmlns=\"\">A1PWEB</frontEndSystem>\r\n</getOrderDataRequest>\r\n</soap:Body>\r\n</soap:Envelope>"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
